@@ -178,6 +178,10 @@ a:visited {
     border-radius: 10%;
 }
 
+.orangebut a:link {
+    color: #000;
+    border-color: #ff5900;
+}
 .orangebut a:hover {
     color: #000;
     background-color: #ff5900;
