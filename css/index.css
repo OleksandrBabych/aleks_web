@@ -179,8 +179,8 @@ a:visited {
 }
 
 .orangebut a:hover {
-    color: #ffffff;
-    background-color: #ffffff;
+    color: #000;
+    background-color: #ff5900;
     border-color: #ff5900;
 }
 
@@ -197,7 +197,7 @@ a:visited {
 }
 
 .greenbut a:link {
-    color: #ffffff;
+    color: #000;
     border-color: #08a708;
 }
 
