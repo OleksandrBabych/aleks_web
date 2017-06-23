@@ -1,18 +1,239 @@
-/*Global properties*/
+/*Global properties...START...*/
 
-* body {
+body {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
     font-family: 'Josefin Sans', sans-serif;
     background-color: #fff6e6;
+    font-size: 24px
 }
 
 h4 {
     font-family: 'Lobster', cursive;
+    font-size: 30px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: -30px;
+    letter-spacing: 5px;
+    z-index: 100
 }
 
 h2 {
     font-family: 'Alfa Slab One', cursive;
-    font-size: 50px;
+    font-size: 80px;
+    letter-spacing: 10px;
 }
 
 
-/*Global properties*/
+/*Global properties...END...*/
+
+
+/*HEADER properties...START...*/
+
+header {
+    background-color: #ffc873;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    color: white;
+    border-bottom: solid;
+    border-bottom-color: #000;
+    border-bottom-width: 10px;
+    height: 550px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:link {
+    color: #fff;
+}
+
+header a:visited {
+    color: #fff;
+}
+
+header a:hover {
+    background-color: #08a708;
+    color: green;
+}
+
+header a:active {
+    color: #fff;
+}
+
+header nav {
+    top: 50px;
+    position: fixed;
+    margin-left: 1050px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    height: 150px;
+    width: 100px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+header a {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ff5900;
+    width: 100px;
+    height: 30px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#photo {
+    position: absolute;
+    left: 35%;
+    right: 40%;
+    top: 20px;
+    z-index: 100
+}
+
+#tittle {
+    position: relative;
+    top: -150px;
+    left: 40px;
+}
+
+#tittle p {
+    position: relative;
+}
+
+
+/*MENU style properties...START...*/
+a:link {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.buttons {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-width: 5px;
+    height: 150px;
+    width: 200px;
+    border-radius: 10%;
+}
+
+.orangebut a:hover {
+    color: #ffffff;
+    background-color: #ffffff;
+    border-color: #ff5900;
+}
+
+.orangebut a:active {
+    color: #000;
+    background-color: #ff5900;
+    border-color: #ff5900;
+}
+
+.orangebut a:visited {
+    color: #000;
+    background-color: #ff5900;
+    border-color: #ff5900;
+}
+
+.greenbut a:link {
+    color: #ffffff;
+    border-color: #08a708;
+}
+
+.greenbut a:hover {
+    color: #ffffff;
+    background-color: #ffffff;
+    border-color: #08a708;
+}
+
+.greenbut a:active {
+    color: #000;
+    background-color: #08a708;
+    border-color: #08a708;
+}
+
+.greenbut a:visited {
+    color: #000;
+    background-color: #08a708;
+    border-color: #08a708;
+}
+
+.greenbut a:link {
+    color: #ffffff;
+    border-color: #08a708;
+}
+
+
+/*MENU style properties...END...*/
+
+
+/*HEADER properties...END...*/
+
+
+/*MAIN style properties...START...*/
+
+
+/*MAIN syle properties...END...*/
