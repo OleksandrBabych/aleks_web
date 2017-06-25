@@ -8,28 +8,27 @@ body {
     padding-right: 10px;
     font-family: 'Josefin Sans', sans-serif;
     background-color: #fff6e6;
-    font-size: 24px
+    font-size: 24px;
 }
 
 h4 {
+    position: relative;
     font-family: 'Lobster', cursive;
     font-size: 30px;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    top: -30px;
-    letter-spacing: 5px;
-    z-index: 100
+    z-index: 100;
+    text-align: center;
+    letter-spacing: 10px;
 }
 
 h2 {
     font-family: 'Alfa Slab One', cursive;
     font-size: 80px;
     letter-spacing: 10px;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
 }
 
 
@@ -43,14 +42,10 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
     color: white;
@@ -88,7 +83,6 @@ header nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
     height: 150px;
@@ -100,15 +94,10 @@ header nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -120,7 +109,6 @@ header a {
     background-color: #ff5900;
     width: 100px;
     height: 30px;
-    -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     align-items: center;
@@ -146,7 +134,11 @@ header a {
 }
 
 
+/*HEADER properties...END...*/
+
+
 /*MENU style properties...START...*/
+
 a:link {
     text-decoration: none;
 }
@@ -181,61 +173,176 @@ a:visited {
 .orangebut a:link {
     color: #000;
     border-color: #ff5900;
+    transition-duration: 1s;
 }
+
 .orangebut a:hover {
     color: #000;
     background-color: #ff5900;
     border-color: #ff5900;
+    transition-duration: 1s;
 }
 
 .orangebut a:active {
     color: #000;
     background-color: #ff5900;
     border-color: #ff5900;
+    transition-duration: 1s;
 }
 
 .orangebut a:visited {
     color: #000;
     background-color: #ff5900;
     border-color: #ff5900;
+    transition-duration: 1s;
 }
 
 .greenbut a:link {
     color: #000;
     border-color: #08a708;
+    transition-duration: 1s;
 }
 
 .greenbut a:hover {
     color: #000;
     background-color: #08a708;
     border-color: #08a708;
+    transition-duration: 1s;
 }
 
 .greenbut a:active {
     color: #000;
     background-color: #08a708;
     border-color: #08a708;
+    transition-duration: 1s;
 }
 
 .greenbut a:visited {
     color: #000;
     background-color: #08a708;
     border-color: #08a708;
+    transition-duration: 1s;
 }
 
 .greenbut a:link {
     color: #000;
     border-color: #08a708;
+    transition-duration: 1s;
 }
 
 
 /*MENU style properties...END...*/
 
 
-/*HEADER properties...END...*/
-
-
 /*MAIN style properties...START...*/
+
+
+/*ABOUT ME section style properties...START...*/
+
+article {
+    display: flex;
+    background-color: #636d76;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    border-bottom: solid;
+    border-top: solid;
+    border-color: #000;
+    border-width: 10px;
+    text-align: left;
+}
+.selfinfo{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selfinfo:hover {
+    color: #eee;
+    transition-duration: 0.5s;
+}
+
+.orangetext {
+    display: flex;
+    justify-content: center;
+    color: #ff5900;
+    padding-top: 25px;
+    letter-spacing: 15px;
+}
+
+
+/*ABOUT ME section style properties...END...*/
+
+
+/*USEFUL INFO section style properties...START...*/
+
+#reses {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 490px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+.scroll:hover {
+    background-color: #eee;
+    transition-delay: 0.1s;
+}
+
+.scroll a img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0px;
+    opacity: 0.5;
+    border-radius: 5%;
+}
+
+.scroll a img:hover {
+    opacity: 1;
+    transition-duration: 1.5s;
+}
+
+.scroll a p {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.scroll:hover a p {
+    background-color: #eee;
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 5s;
+    border-bottom: 5px;
+    border-top-color: red;
+}
+
+
+/*USEFUL INFO section style properties...END...*/
+
+
+/*MAIN syle properties...END...*/
 
 
 /*MAIN syle properties...END...*/
