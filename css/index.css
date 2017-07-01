@@ -22,7 +22,7 @@ h4 {
 
 h2 {
     font-family: 'Alfa Slab One', cursive;
-    font-size: 80px;
+    font-size: 40pt;
     letter-spacing: 10px;
     text-align: left;
 }
@@ -39,98 +39,79 @@ h1 {
 
 header {
     background-color: #ffc873;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    position: relative;
     display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: end;
+    align-items: stretch;
     justify-content: flex-end;
-    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
     color: white;
     border-bottom: solid;
     border-bottom-color: #000;
     border-bottom-width: 10px;
+    max-width: 1200px;
     height: 550px;
 }
 
 header a {
     text-decoration: none;
-}
-
-header a:link {
     color: #fff;
 }
 
-header a:visited {
-    color: #fff;
-}
-
-header a:hover {
-    background-color: #08a708;
-    color: green;
-}
-
-header a:active {
-    color: #fff;
-}
-
-header nav {
-    top: 50px;
-    position: fixed;
-    margin-left: 1050px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+.lmenu {
     display: flex;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+    background-color: none;
+    width: auto;
+    justify-content: flex-end;
+    width: 1200px;
     height: 150px;
-    width: 100px;
+    z-index: 110;
 }
 
-header nav ul {
+.lchange {
     list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    justify-content: space-around;
+    flex-flow: column;
+    height: 100px;
 }
 
-header a {
-    color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
+.lchange li a {
     display: flex;
     background-color: #ff5900;
     width: 100px;
     height: 30px;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    padding-left: 30px;
     align-items: center;
-    padding-left: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 }
+
+
+/* Action language change ...START...*/
+
+.lchange li a:hover {
+    color: #fff;
+    background-color: #08a708;
+    border-color: #08a708;
+    transition-duration: 1s;
+}
+
+
+/* Action language change ...END...*/
 
 #photo {
     position: absolute;
-    left: 35%;
-    right: 40%;
     top: 20px;
-    z-index: 100
+    z-index: 5;
+    left: 30%;
 }
 
 #tittle {
     position: relative;
-    top: -150px;
+    top: -25px;
     left: 40px;
-}
-
-#tittle p {
-    position: relative;
 }
 
 
@@ -152,22 +133,27 @@ a:visited {
 }
 
 .buttons {
+    position: relative;
     list-style-type: none;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     justify-content: space-between;
+    margin-right: 45px;
 }
 
 .buttons a {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     border: solid;
     border-width: 5px;
-    height: 150px;
+    height: 130px;
     width: 200px;
-    border-radius: 10%;
+    border-radius: 25px;
+    margin: 10px;
 }
 
 .orangebut a:link {
@@ -230,6 +216,14 @@ a:visited {
     transition-duration: 1s;
 }
 
+.greenbut a {
+    text-align: center;
+}
+
+.orangebut a {
+    text-align: center;
+}
+
 
 /*MENU style properties...END...*/
 
@@ -239,25 +233,26 @@ a:visited {
 
 /*ABOUT ME section style properties...START...*/
 
-article {
-    display: flex;
-    background-color: #636d76;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 20px 20px 20px;
-    border-bottom: solid;
+.inside {
     border-top: solid;
     border-color: #000;
     border-width: 10px;
-    text-align: left;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .selfinfo {
     display: flex;
+    background-color: #636d76;
     justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
-    align-items: center;
+    padding: 40px 20px 20px 40px;
+    text-align: left;
+}
+
+.selfinfo ul {
+    list-style-type: circle;
 }
 
 .selfinfo:hover {
@@ -279,11 +274,35 @@ article {
 
 /*USEFUL INFO section style properties...START...*/
 
+#ex2 h1 {
+    display: flex;
+    justify-content: center;
+    color: #08a708;
+    padding-top: 25px;
+    letter-spacing: 15px;
+}
+
+#ex3 h1 {
+    display: flex;
+    justify-content: center;
+    color: #ff5900;
+    padding-top: 25px;
+    letter-spacing: 15px;
+}
+
+#ex4 h1 {
+    display: flex;
+    justify-content: center;
+    color: #08a708;
+    padding-top: 25px;
+    letter-spacing: 15px;
+}
+
 #reses {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     margin: 0px;
     padding: 0px;
 }
@@ -341,6 +360,71 @@ article {
 
 
 /*USEFUL INFO section style properties...END...*/
+
+
+/*Links section style properties...START...*/
+
+#links {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    text-align: left;
+}
+
+.socialnet {
+    list-style-type: none;
+}
+
+.socialnet li img {
+    float: left;
+    margin-right: 25px;
+}
+
+.fb {
+    display: flex;
+    width: 1075px;
+    margin-right: 125px;
+    border-style: solid;
+    border-color: #3b5998;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.in {
+    display: flex;
+    width: 1075px;
+    margin-right: 125px;
+    border-style: solid;
+    border-color: #0077b5;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.git {
+    display: flex;
+    width: 1075px;
+    margin-right: 125px;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.be {
+    display: flex;
+    width: 1075px;
+    margin-right: 125px;
+    border-style: solid;
+    border-color: #1769ff;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+
+/*Links section style properties...END...*/
 
 
 /*MAIN syle properties...END...*/
