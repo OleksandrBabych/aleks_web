@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Josefin+Sans|Lobster" rel="stylesheet">
     <link rel="shortcut icon" href="dart.ico" />
     <link href="css/index.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -25,32 +26,34 @@
         </div>
         <!--Page owner's name....START....-->
         <section id="tittle">
-            <h2 class="wite">Oleksandr<br> Babych
+            <h2 class="wite">Oleksandr Babych
             </h2>
             <p>Web deweloper</p>
         </section>
     </header>
+    <div class="premain">
+        <!--Page owner lifeway credo....START....-->
+        <div id="credo">
+            <h4>Get idea. Learn. Create.</h4>
+        </div>
+        <!--Page owner lifeway credo....END....-->
 
-    <!--Page owner lifeway credo....START....-->
-    <div id="credo">
-        <h4>Get idea. Learn. Create.</h4>
+        <!--Navigation butomns....START....-->
+
+        <nav id="menu">
+            <ul class="buttons">
+                <li class="orangebut">
+                    <a id="1stbut" href="#ex1">ABOUT<br> ME</a></li>
+                <li class="greenbut">
+                    <a id="2dbut" href="#ex2">USEFUL<br>INFO</a></li>
+                <li class="orangebut">
+                    <a id="3dbut" href="#ex3">CONTACT<br>ME</a></li>
+                <li class="greenbut">
+                    <a id="4sbut" href="#ex4">LINKS<br></a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <!--Page owner lifeway credo....END....-->
-
-    <!--Navigation butomns....START....-->
-    <nav id="menu">
-        <ul class="buttons">
-            <li class="orangebut">
-                <a href="#ex1">ABOUT<br> ME</a></li>
-            <li class="greenbut">
-                <a href="#ex2">UEFUL<br>INFO</a></li>
-            <li class="orangebut">
-                <a href="#ex3">CONTACT<br>ME</a></li>
-            <li class="greenbut">
-                <a href="#ex4">LINKS<br></a>
-            </li>
-        </ul>
-    </nav>
     <!--Navigation butomns....END....-->
 
 
@@ -58,7 +61,7 @@
         <!--Information articles....START....-->
         <article id="ex1">
             <h1 class="orangetext">FEW WORDS ABOUT ME</h1>
-            <section class="inside">
+            <div class="inside">
                 <section class="selfinfo">
                     <h3>Childhood</h3>
                     <p>
@@ -97,7 +100,7 @@
                         restless nights, I decided that I want to develop site development and that I really like it, so I will use the rule of three derivatives to "work, work, work".
                     </p>
                 </section>
-            </section>
+            </div>
         </article>
         <!--Information articles....END....-->
 
@@ -141,7 +144,7 @@
                 <ul class="socialnet">
                     <li class="fb">
                         <a href="https://www.facebook.com/Olexandr.Babych.1?ref=bookmarks">
-                            <img src="img/facebook.png" alt="facebook_logo">https://www.facebook.com/Olexandr.Babych.1?ref=bookmarks</a>
+                            <img src="img/facebook.png" alt="facebook_logo">https://www.facebook.com/Olexandr. Babych.1?ref=bookmarks</a>
                     </li>
                     <li class="in">
                         <a href="https://www.linkedin.com/in/oleksandr-babych-3b9b37141/">
@@ -176,17 +179,17 @@
                         <li class="field">
                             <label>
                                 <b>E-mail:</b>
-                                <input type="email" name="email"  placeholder="user@mail.com" >
+                                <input class="mail" type="email" name="email"  placeholder="user@mail.com" >
                             </label>
                         </li>
                         <li class="field">
                             <label>
-                               <b>Mesage:</b> <textarea rows="4" cols="50" placeholder="Type your mesage..."></textarea>
+                               <b>Mesage:</b> <textarea class="coment" rows="4" cols="50" placeholder="Type your mesage..."></textarea>
                             </label>
                         </li>
                     </ul>
-                    <div>
-                        <input value="SEND" type="submit">
+                    <div class="circ">
+                        <input class="sbut" value="SEND" type="submit">
                     </div>
                 </form>
             </div>
@@ -199,7 +202,6 @@
             <p>
     </footer>
     <!--Hiding footer....END-->
-
-</body>
+    <script src="js/index.js"></script>>
 
 </html>
