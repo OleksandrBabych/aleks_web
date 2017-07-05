@@ -7,7 +7,13 @@
     <!--Webpage icon "DARTH WEDER helmet"-->
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Josefin+Sans|Lobster" rel="stylesheet">
     <link rel="shortcut icon" href="dart.ico" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5">
 
 </head>
 
@@ -40,16 +46,16 @@
 
         <!--Navigation butomns....START....-->
 
-        <nav id="menu">
+        <nav class="smooth" id="menu">
             <ul class="buttons">
                 <li class="orangebut">
-                    <a id="1stbut" href="#ex1">ABOUT<br> ME</a></li>
+                    <a class="smooth" id="1stbut" href="#ex1">ABOUT<br> ME</a></li>
                 <li class="greenbut">
-                    <a id="2dbut" href="#ex2">USEFUL<br>INFO</a></li>
+                    <a class="smooth" id="2dbut" href="#ex2">USEFUL<br>INFO</a></li>
                 <li class="orangebut">
-                    <a id="3dbut" href="#ex3">CONTACT<br>ME</a></li>
+                    <a class="smooth" id="3dbut" href="#ex3">CONTACT<br>ME</a></li>
                 <li class="greenbut">
-                    <a id="4sbut" href="#ex4">LINKS<br></a>
+                    <a class="smooth" id="4sbut" href="#ex4">LINKS<br></a>
                 </li>
             </ul>
         </nav>
@@ -65,7 +71,7 @@
                 <section class="selfinfo">
                     <h3>Childhood</h3>
                     <p>
-                        I was born on March 20, 1994 in Lviv. I spent my childhood in S. Podliptsi, located in Zolochiv district. When I was 9 years old, my parents took me to Lviv where I live now. I always was an active, interesting kid,<br> I loved
+                            I was born on March 20, 1994 in Lviv. I spent my childhood in S. Podliptsi, located in Zolochiv district. When I was 9 years old, my parents took me to Lviv where I live now. I always was an active, interesting kid,<br> I loved
                         playing with mechanisms and lego. Models of cars have always been broken because it was interesting what was inside of it. Always was interesting in how everything works.
                     </p>
                 </section>
@@ -94,10 +100,10 @@
 
                 <section class="selfinfo">
                     <h3>Description</h3>
-                    <p>Hi,as you have already understood, my name is Alexander, Since childhood I was interested in techologies, I was creative and I always wanted to create something, that's why I stared to stydy architecture. While studying at 3d year,
-                        I started thinking about IT, wasthinking about re-teaching, but then left this idea because my instructor offered me an architectural job, and by that time, I really wanted to work and have my own earned money. Having graduated
-                        from the University and with experience as a 3 year old, I decided to create a web portfolio, began to read how to translate it and how to write a site, and here I mentioned what I really wanted, but I forgot. After quite a few
-                        restless nights, I decided that I want to develop site development and that I really like it, so I will use the rule of three derivatives to "work, work, work".
+                    <p>     Hi,as you have already understood, my name is Alexander, Since childhood I was interested in techologies, I was creative and I always wanted to create something, that's why I stared to stydy architecture. While studying at 3d year,
+                        I started thinking about IT, was thinking about re-teaching, but then left this idea because my proffesor offered me an architectural job, and by that time, I really wanted to work and have my own earned money. Having graduated
+                        from the University and with experience as a 3 year, I decided to create a web portfolio, began to read how to create it and how to write a site, and here I mentioned what I really wanted, but I forgot. After quite a few
+                        restless nights, I decided that I want to work in web development area and that I really like it, so I will use the rule of three derivatives to "work, work, work".
                     </p>
                 </section>
             </div>
@@ -107,38 +113,63 @@
         <!--Infomation sources for studing (background-orage) ....START....-->
         <section id="ex2">
             <h1 class="greentext">USFEUL INFORMATION</h1>
-            <ul id="reses">
-                <li class="scroll">
+            <div class="container">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
 
-                    <a href="https://www.w3schools.com/default.asp">
-                        <img src="mainimg/w3sp.jpg" alt="facebook_logo">
-                        <p><b>W3School:</b>one of the best self studing resourse</p>
+                    <!-- Wrapper for slides -->
+
+                    <div class="carousel-inner" role="listbox" id="reses">
+                        <div class="item active scroll">
+                            <a href="https://www.w3schools.com/default.asp">
+                                <img src="mainimg/w3sp.jpg" alt="w3s_logo">
+                                <p><b>W3School:</b>one of the best self studing resourse</p>
+                            </a>
+                        </div>
+
+                        <div class="item scroll">
+                            <a href="https://developer.mozilla.org/ru/">
+                                <img src="mainimg/mdnp.jpg" alt="mozila_development_network_logo">
+                                <p><b>MDN:</b><br>Mozila developer network </p>
+                            </a>
+                        </div>
+
+                        <div class="item scroll">
+                            <a href="https://c9.io/">
+                                <img src="mainimg/c9p.jpg" alt="cloud_9_logo">
+                                <p><b>C9:</b>Cloud 9 - online workplace </p>
+                            </a>
+                        </div>
+                        <div class="item scroll">
+                            <a href="https://github.com/">
+                                <img src="mainimg/githubp.jpg" alt="git_hub_logo">
+                                <p><strong>GIThub:</strong>The place wheare u can share your code </p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control " href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
                     </a>
-                </li>
-                <li class="scroll">
-                    <a href="https://developer.mozilla.org/ru/">
-                        <img src="mainimg/mdnp.jpg" alt="mozila_development_network_logo">
-                        <p><b>MDN:</b><br>Mozila developer network </p>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
                     </a>
-                </li>
-                <li class="scroll">
-                    <a href="https://c9.io/">
-                        <img src="mainimg/c9p.jpg" alt="cloud_9_logo">
-                        <p><b>C9:</b>Cloud 9 - online workplace </p>
-                    </a>
-                </li>
-                <li class="scroll">
-                    <a href="https://github.com/">
-                        <img src="mainimg/githubp.jpg" alt="git_hub_logo">
-                        <p><strong>GIThub:</strong>The place wheare u can share your code </p>
-                    </a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
         <!--Infomation sources for studing (background-orage) ....END....-->
 
         <!--Social network links wheare you can find the page owner (background-gray) ....START....-->
-        <section id="ex3">
+        <section id="ex4">
             <h1>HEARE U CAN FIND ME</h1>
             <div id="links">
                 <ul class="socialnet">
@@ -164,27 +195,27 @@
         <!--Social network links wheare you can find the page owner (background-gray) ....END....-->
 
         <!--Send form...START...-->
-        <section id="ex4">
-            <h1>CONNECT ME</h1>
+        <section id="ex3">
+            <h1>CONTACT ME</h1>
             <div id="connect">
                 <form action="https://formspree.io/arch.oleksandrbabych@gmail.com" method="POST">
                     <ul>
                         <li class="field">
                             <label>
-                                <b>Your name:</b>
+                                <b class="formtxt">Your name:</b>
                                 <input type="text" name="Name/Surname" placeholder="User Name"/>
                             </label>
                         </li>
 
                         <li class="field">
                             <label>
-                                <b>E-mail:</b>
+                                <b class="formtxt">E-mail:</b>
                                 <input class="mail" type="email" name="email"  placeholder="user@mail.com" >
                             </label>
                         </li>
                         <li class="field">
                             <label>
-                               <b>Mesage:</b> <textarea class="coment" rows="4" cols="50" placeholder="Type your mesage..."></textarea>
+                               <b class="formtxt">Mesage:</b> <textarea class="coment" rows="4" cols="50" placeholder="Type your mesage..."></textarea>
                             </label>
                         </li>
                     </ul>
@@ -198,10 +229,17 @@
     </main>
     <!--Hiding footer....START-->
     <footer>
-        <p>Copyrught© 2017, All rights reserved
+        <p>If you like what you see let me know about it and I'll be glad to hear objective critique. 
             <p>
     </footer>
     <!--Hiding footer....END-->
-    <script src="js/index.js"></script>>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Vanilla JS -->
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/index.js"></script>
+</body>
 
 </html>

@@ -1,0 +1,41 @@
+.col-centered {
+    margin: 0 auto;
+}
+
+.carousel-control {
+    display: flex;
+    width: 0;
+    
+
+}
+
+.glyphicon {
+    color: red;
+    border-color: red;
+    margin-bottom: 50px;
+    
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    color: red;
+    border-color: red;
+    border-style: solid;
+    border-radius: 15px;
+    height: 20px;
+    align-items: flex-end;
+    bottom: -30px;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.carousel-indicators li {
+    color: red;
+    background-color: red;
+}
+
+.carousel-inner {cdbg
+
+    
+}
