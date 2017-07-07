@@ -193,31 +193,31 @@
 
         <!--Send form...START...-->
         <section id="ex3">
-            <h1>З'ВЯЖІТЬСЯ ЗІ МНОЮ</h1>
+            <h1>CONTACT ME</h1>
             <div id="connect">
-                <form action="https://formspree.io/arch.oleksandrbabych@gmail.com" method="POST">
+                <form id="sform">
                     <ul>
                         <li class="field">
                             <label>
-                                <b class="formtxt">Введыть ім'я :</b>
-                                <input type="text" name="Name/Surname" placeholder="Ім'я користувача"/>
+                                <b class="formtxt">Name:</b>
+                                <input id="yourname" type="text" name="Name/Surname" placeholder="User Name"/>
                             </label>
                         </li>
 
                         <li class="field">
                             <label>
-                                <b class="formtxt">Введіть пошту:</b>
-                                <input class="mail" type="email" name="email"  placeholder="user@mail.com" >
+                                <b class="formtxt">Mail:</b>
+                                <input id="youremail" class="mail" type="email" name="email"  placeholder="user@mail.com" >
                             </label>
                         </li>
                         <li class="field">
                             <label>
-                               <b class="formtxt">Ваше повідомлення:</b> <textarea class="coment" rows="4" cols="50" placeholder="Наберіть текст..."></textarea>
+                               <b class="formtxt">Mesage:</b> <textarea id="formtxt" class="coment" rows="4" cols="50" placeholder="Type your mesage..."></textarea>
                             </label>
                         </li>
                     </ul>
                     <div class="circ">
-                        <input class="sbut" value="SEND" type="submit">
+                        <input id="btn-submit" class="sbut" value="SEND" type="submit">
                     </div>
                 </form>
             </div>
