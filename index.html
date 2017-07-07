@@ -128,27 +128,27 @@
                     <div class="carousel-inner" role="listbox" id="reses">
                         <div class="item active scroll">
                             <a href="https://www.w3schools.com/default.asp">
-                                <img src="mainimg/w3sp.jpg" alt="w3s_logo">
+                                <img src="img/mainimg/w3sp.jpg" alt="w3s_logo">
                                 <p><b>W3School:</b>one of the best self studing resourse</p>
                             </a>
                         </div>
 
                         <div class="item scroll">
                             <a href="https://developer.mozilla.org/ru/">
-                                <img src="mainimg/mdnp.jpg" alt="mozila_development_network_logo">
+                                <img src="img/mainimg/mdnp.jpg" alt="mozila_development_network_logo">
                                 <p><b>MDN:</b><br>Mozila developer network </p>
                             </a>
                         </div>
 
                         <div class="item scroll">
                             <a href="https://c9.io/">
-                                <img src="mainimg/c9p.jpg" alt="cloud_9_logo">
+                                <img src="img/mainimg/c9p.jpg" alt="cloud_9_logo">
                                 <p><b>C9:</b>Cloud 9 - online workplace </p>
                             </a>
                         </div>
                         <div class="item scroll">
                             <a href="https://github.com/">
-                                <img src="mainimg/githubp.jpg" alt="git_hub_logo">
+                                <img src="img/mainimg/githubp.jpg" alt="git_hub_logo">
                                 <p><strong>GIThub:</strong>The place wheare u can share your code </p>
                             </a>
                         </div>
@@ -198,29 +198,29 @@
         <section id="ex3">
             <h1>CONTACT ME</h1>
             <div id="connect">
-                <form action="https://formspree.io/arch.oleksandrbabych@gmail.com" method="POST">
+                <form id="sform">
                     <ul>
                         <li class="field">
                             <label>
-                                <b class="formtxt">Your name:</b>
-                                <input type="text" name="Name/Surname" placeholder="User Name"/>
+                                <b class="formtxt">Name:</b>
+                                <input id="yourname" type="text" name="Name/Surname" placeholder="User Name"/>
                             </label>
                         </li>
 
                         <li class="field">
                             <label>
-                                <b class="formtxt">E-mail:</b>
-                                <input class="mail" type="email" name="email"  placeholder="user@mail.com" >
+                                <b class="formtxt">Mail:</b>
+                                <input id="youremail" class="mail" type="email" name="email"  placeholder="user@mail.com" >
                             </label>
                         </li>
                         <li class="field">
                             <label>
-                               <b class="formtxt">Mesage:</b> <textarea class="coment" rows="4" cols="50" placeholder="Type your mesage..."></textarea>
+                               <b class="formtxt">Mesage:</b> <textarea id="formtxt" class="coment" rows="4" cols="50" placeholder="Type your mesage..."></textarea>
                             </label>
                         </li>
                     </ul>
                     <div class="circ">
-                        <input class="sbut" value="SEND" type="submit">
+                        <input id="btn-submit" class="sbut" value="SEND" type="submit">
                     </div>
                 </form>
             </div>
@@ -239,7 +239,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Vanilla JS -->
     <script src="js/smooth-scroll.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/index.js"></script> 
+    <script src="js/form.js"></script>
 </body>
 
 </html>

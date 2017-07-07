@@ -1,14 +1,242 @@
 <!doctype html>
-<html lang="en">
+<html lang="UK">
+
 <head>
     <meta charset="UTF-8">
     <title>Aleks web page</title>
     <!--Webpage icon "DARTH WEDER helmet"-->
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Josefin+Sans|Lobster" rel="stylesheet">
     <link rel="shortcut icon" href="dart.ico" />
-    <link rel="stylesheet" href="css/index.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
 </head>
+
 <body>
-    
+    <header>
+        <!--language change butomns....START-->
+        <nav class="lmenu">
+            <ul class="lchange">
+                <li id="en"><a href="index.html"> EN </a></li>
+                <li id="uk"><a href="UK.html"> UK </a></li>
+            </ul>
+        </nav>
+        <!--language change butomns....END....-->
+        <div id="photo">
+            <img src="img/owner.png" alt="web page owner's photo" />
+        </div>
+        <!--Page owner's name....START....-->
+        <section id="tittle">
+            <h2 class="wite">Олександр Бабич
+            </h2>
+            <p>Веб розробник</p>
+        </section>
+    </header>
+    <div class="premain">
+        <!--Page owner lifeway credo....START....-->
+        <div id="credo">
+            <h4>Придумай. Вчись. Твори.</h4>
+        </div>
+        <!--Page owner lifeway credo....END....-->
+
+        <!--Navigation butomns....START....-->
+
+        <nav class="smooth" id="menu">
+            <ul class="buttons">
+                <li class="orangebut">
+                    <a class="smooth" id="1stbut" href="#ex1">ПРО<br> МЕНЕ</a></li>
+                <li class="greenbut">
+                    <a class="smooth" id="2dbut" href="#ex2">НОРИСНО</a></li>
+                <li class="orangebut">
+                    <a class="smooth" id="3dbut" href="#ex3">ЗВ'ЯЗАТИСЯ</a></li>
+                <li class="greenbut">
+                    <a class="smooth" id="4sbut" href="#ex4">ПОСИЛАННЯ<br></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!--Navigation butomns....END....-->
+
+
+    <main>
+        <!--Information articles....START....-->
+        <article id="ex1">
+            <h1 class="orangetext">ДЕКІЛЬКА СЛІВ ПРО МЕНЕ</h1>
+            <div class="inside">
+                <section class="selfinfo">
+                    <h3>Дитинство</h3>
+                    <p>
+                           Я народився 20 березня 1994 року у Львові. Дитинство я провів у С. Подліпці, розташованому в Золочівському районі. Коли мені було 9 років, батьки забрали мене до Львова, де я зараз живу. Я завжди був активною, цікавою дитиною, <br>
+                           Я любив гратись з механізмами і різного роду конструкторами. Моделі машин завжди були поламані, тому що було цікаво, що там всередині. Завжди було цікаво, як все працює.
+                    </p>
+                </section>
+
+                <section class="selfinfo" id="ed">
+                    <h3>Навчання</h3>
+                    <ul>
+                        <li>2000-2004 Молодша школа в с.Підлипці</li>
+                        <li>2004-2010 Загальноосвітня школа №49 в м.Львів</li>
+                        <li>2010-2016 Національний університет "Львівська політехніка", інститут "Архітектури", кафедра "Архітектурне проектування"</li>
+                        <li>Під час навчання в університеті закінчив курс англійської мови (рівень середній) та курс польської мови (рівень початковий)</li>
+                        <li>2016 Курс фотошопу в "Skill up"</li>
+                        <li>Завжди подобалось вчити новий для мене софт а саме звязаний з 3д моделюванням, самостійно освоїв такі пакети як: 3ds max; Autocad; Archicad; Revit; </li>
+                        <li>2017 знайшов для себе цікавим, веб розробку, закінчив курс HTML/CSS/JS-основи в SoftServe, зараз продовжую розвиватись в цьому напрямку. </li>
+                    </ul>
+                </section>
+
+                <section class="selfinfo" id="wex">
+                    <h3>Досвід роботи</h3>
+                    <ul>
+                        <li>2012 працював як помычник коваля в приватній майстерні</li>
+                        <li>2014-і на момент написання сайту працюю архітектором в проектній організації "LOGISTRUCT"</li>
+                        <li>2016-2017 Фріланс робота, моделював Ленд марки.</li>
+                    </ul>
+                </section>
+
+                <section class="selfinfo">
+                    <h3>Опис</h3>
+                    <p>    Привіт, як ви вже зрозуміли, моє ім'я - Олександр. З дитинства мене цікавило технології, я був творчим, і я завжди хотів щось створювати, тому я поступив на архітектуру. Навчаючись на 3-му році, я почав думати про ІТ, думав про перекваліфікацію, але потім залишив цю ідею, тому що мені запропонували роботу архітектором, і на той часу я дуже хотів працювати і мати свої власно зароблені гроші. Закінчивши  університет і з досвідом вже як 3 роки я вирішив створити веб-портфоліо, почав читати, як його створити і як написати сайт, і тут я згадав, що я дуже хотів, але я забув. Після декількох безсонних ночей, я вирішив, що хочу працювати в галузі веб-розробки, і що мені це справді подобається, тому я буду використовувати правило трьох змінних "вчитись, працювати, вчитись".
+                    </p>
+                </section>
+            </div>
+        </article>
+        <!--Information articles....END....-->
+
+        <!--Infomation sources for studing (background-orage) ....START....-->
+        <section id="ex2">
+            <h1 class="greentext">КОРИСНА ІНФОРМАЦІЯ</h1>
+            <div class="container">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+
+                    <div class="carousel-inner" role="listbox" id="reses">
+                        <div class="item active scroll">
+                            <a href="https://www.w3schools.com/default.asp">
+                                <img src="img/mainimg/w3sp.jpg" alt="w3s_logo">
+                                <p><b>W3School:</b>Одне з найкращих джерел саморозвитку</p>
+                            </a>
+                        </div>
+
+                        <div class="item scroll">
+                            <a href="https://developer.mozilla.org/ru/">
+                                <img src="img/mainimg/mdnp.jpg" alt="mozila_development_network_logo">
+                                <p><b>MDN:</b><br>Мережа веб розробки </p>
+                            </a>
+                        </div>
+
+                        <div class="item scroll">
+                            <a href="https://c9.io/">
+                                <img src="img/mainimg/c9p.jpg" alt="cloud_9_logo">
+                                <p><b>C9:</b>Cloud 9 - онлайн редактор </p>
+                            </a>
+                        </div>
+                        <div class="item scroll">
+                            <a href="https://github.com/">
+                                <img src="img/mainimg/githubp.jpg" alt="git_hub_logo">
+                                <p><strong>GIThub:</strong>Місце де ви можете поділитись своїм кодом.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control " href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--Infomation sources for studing (background-orage) ....END....-->
+
+        <!--Social network links wheare you can find the page owner (background-gray) ....START....-->
+        <section id="ex4">
+            <h1>ТУТ ВИ МОЖЕТЕ МЕНЕ ЗНАЙТИ</h1>
+            <div id="links">
+                <ul class="socialnet">
+                    <li class="fb">
+                        <a href="https://www.facebook.com/Olexandr.Babych.1?ref=bookmarks">
+                            <img src="img/facebook.png" alt="facebook_logo">https://www.facebook.com/Olexandr. Babych.1?ref=bookmarks</a>
+                    </li>
+                    <li class="in">
+                        <a href="https://www.linkedin.com/in/oleksandr-babych-3b9b37141/">
+                            <img src="img/linkedin.png" alt="linkedin_logo">https://www.linkedin.com/in/oleksandr-babych-3b9b37141/</a>
+                    </li>
+                    <li class="git">
+                        <a href="https://github.com/OleksandrBabych">
+                            <img src="img/github.png" alt="github_logo">https://github.com/OleksandrBabych/</a>
+                    </li>
+                    <li class="be">
+                        <a href="https://www.behance.net/archoleksaaacf">
+                            <img src="img/behance.png" alt="behance_logo">https://www.behance.net/archoleksaaacf/</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Social network links wheare you can find the page owner (background-gray) ....END....-->
+
+        <!--Send form...START...-->
+        <section id="ex3">
+            <h1>З'ВЯЖІТЬСЯ ЗІ МНОЮ</h1>
+            <div id="connect">
+                <form action="https://formspree.io/arch.oleksandrbabych@gmail.com" method="POST">
+                    <ul>
+                        <li class="field">
+                            <label>
+                                <b class="formtxt">Введыть ім'я :</b>
+                                <input type="text" name="Name/Surname" placeholder="Ім'я користувача"/>
+                            </label>
+                        </li>
+
+                        <li class="field">
+                            <label>
+                                <b class="formtxt">Введіть пошту:</b>
+                                <input class="mail" type="email" name="email"  placeholder="user@mail.com" >
+                            </label>
+                        </li>
+                        <li class="field">
+                            <label>
+                               <b class="formtxt">Ваше повідомлення:</b> <textarea class="coment" rows="4" cols="50" placeholder="Наберіть текст..."></textarea>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="circ">
+                        <input class="sbut" value="SEND" type="submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!--Send form...END...-->
+    </main>
+    <!--Hiding footer....START-->
+    <footer>
+        <p>If you like what you see let me know about it and I'll be glad to hear objective critique. 
+            <p>
+    </footer>
+    <!--Hiding footer....END-->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Vanilla JS -->
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
